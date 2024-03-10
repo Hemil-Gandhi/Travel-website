@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Pay Checkout</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background-color: #a5d8ff;
+      }
+      .container {
+        max-width: 400px;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      label {
+        margin-top: 10px;
+      }
+      input,
+      button,
+      select {
+        padding: 10px;
+        margin-top: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+      }
+      a {
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        margin-top: 20px;
+        padding: 10px;
+        text-align: center;
+      }
+      a:hover {
+        background-color: #0056b3;
+      }
+
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Google Pay</h2>
+      <form>
+        <label>Email Address</label>
+        <input type="email" id="email" name="email" required />
+        <label>Phone Number</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <select id="select" onchange="paymentMethod()">
+          <option>Select UPI Id or QR Scan</option>
+          <option value="upi">UPI Id</option>
+          <option value="qr">QR Scan</option>
+        </select>
+
+        <div id="upi" class="hidden">
+          <label>UPI ID:</label>
+          <input type="text" />
+        </div>
+
+        <div id="qr" class="hidden">
+          <img
+            src="img/gpay.jpg"
+            width="150px"
+            height="150px"
+            alt="QR Code for Payment"
+          />
+        </div>
+
+        <a href="thank.html">Pay</a>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

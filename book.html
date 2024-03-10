@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Your Trip</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #a5d8ff;
+      }
+      .container {
+        max-width: 600px;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      h2,
+      .total-price {
+        text-align: center;
+        color: #333;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      label {
+        margin-top: 10px;
+      }
+      input,
+      select {
+        padding: 10px;
+        margin-top: 5px;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+        font-size: 16px;
+      }
+      a {
+        background-color: #ff4500;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        margin-top: 20px;
+        cursor: pointer;
+        font-size: 16px;
+        text-decoration: none;
+        text-align: center;
+      }
+      a:hover {
+        background-color: #0056b3;
+      }
+      b {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Book Your Next Destination(Air-plane Price)</h2>
+
+      <form>
+        <label>Depature From:</label>
+        <input type="text" value="Mumbai" readonly />
+        <label>Destination:</label>
+
+        <select id="tour" onchange="amount()">
+          <option>Select The destination</option>
+          <option id="swits" value="24000">Zurich & Genava - ₹24,000</option>
+          <option id="ind" value="11500">Srinagar & Leh- ₹11,500</option>
+          <option id="swe" value="27500">Stockholm & Malmö -₹27,500</option>
+          <option id="carb" value="52000">Barbados & Cuba-₹52,000</option>
+          <option id="indo" value="16500">Jakarta & Bali -₹16,500</option>
+          <option id="fr" value="27000">Paris & Leon-₹27,000</option>
+          <option id="brazi" value="72000">
+            Rio-de-Jinario & São Paulo -₹72,000
+          </option>
+          <option id="jap" value="38000">Tokyo & Osaka-₹38,000</option>
+          <option id="portu" value="48000">Lisbon & Porto -₹48,000</option>
+          <option id="morro" value="41500">Rabat & Marrakech -₹41,500</option>
+        </select>
+
+        <label>Depature Date:<b>*</b></label>
+        <input type="date" id="check-in" required />
+
+        <label>Arrival Date:<b>*</b></label>
+        <input type="date" id="check-out" required />
+
+        <label>Number of Travelers:</label>
+        <input type="number" required id="guests" onchange="amount()" />
+        <h5><b>*</b>Round Trip</h5>
+        <div class="total-price">
+          Total Price: ₹<span id="totalAmount">0</span>
+        </div>
+
+        <a href="payment.html">Book Now</a>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

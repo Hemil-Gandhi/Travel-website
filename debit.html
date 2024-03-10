@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Debit Card</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background-color: #a5d8ff;
+      }
+      .container {
+        max-width: 350px;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .payment-option label {
+        font-weight: bold;
+        margin-bottom: 10px;
+        display: inline-block;
+      }
+      .payment-option input {
+        padding: 10px;
+        margin: 10px 0;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .btn {
+        display: inline-block;
+        background-color: #ff4500;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 20px;
+      }
+      .btn:hover {
+        background-color: #cc3700;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="payment-option" id="debitCardDetails">
+        <label>Debit Card Number:</label>
+        <input type="number" required /><br />
+        <label>Expiry Date:</label>
+        <input type="date" required /><br />
+        <label>CVV:</label>
+        <input type="password" required />
+      </div>
+      <a href="thank.html" class="btn">Pay</a>
+    </div>
+  </body>
+</html>

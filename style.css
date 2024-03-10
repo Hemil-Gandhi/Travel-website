@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  background-color: #a5d8ff;
+  position: relative;
+}
+
+.menu-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-icon,
+.menu-links {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.menu-links a {
+  margin-left: 25px;
+}
+
+.menu-bar {
+  background-color: #a5d8ff;
+  padding: 10px 20px;
+  padding-top: 10px;
+}
+
+.menu-bar a {
+  text-decoration: none;
+  color: #333;
+}
+
+.menu-icon a {
+  font-weight: bold;
+}
+.icon {
+  height: 36px;
+  width: 36px;
+  margin: 15px 5px;
+  cursor: pointer;
+}
+header {
+  height: 100vh;
+  position: relative;
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.3),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url(img/background.avif);
+  background-size: cover;
+  color: #fff;
+}
+header h1 {
+  margin-bottom: 10px;
+  font-size: 48px;
+  color: #d0ebff;
+}
+h1 {
+  margin-bottom: 10px;
+  font-size: 48px;
+  color: #1c7ed6;
+}
+h2 {
+  text-align: center;
+}
+h3 {
+  margin-top: 20px;
+  font-size: 28px;
+}
+h5 {
+  font-size: 24px;
+  color: #1864ab;
+}
+.content {
+  text-align: left;
+  margin-top: 150px;
+  margin-left: 50px;
+  width: 900px;
+}
+.content-details {
+  margin-top: 20px;
+  text-align: center;
+}
+select {
+  width: 150px;
+  padding: 8px;
+  margin: 10px 0;
+  border-radius: 4px;
+}
+label {
+  font-size: 24px;
+}
+nav a:hover {
+  border-bottom: 2px solid #228be6;
+}
+.details {
+  width: 250px;
+  border: none;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.search {
+  width: 250px;
+  border: none;
+  padding: 10px;
+  background-color: #339af0;
+  cursor: pointer;
+  margin-top: 5px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+#popular {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+section {
+  background-color: #a5d8ff;
+}
+.image {
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.destination-1 {
+  margin: 20px 15px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.destination-2 {
+  margin: 20px 15px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.name {
+  background-color: #d7e8fb;
+  border-radius: 10px;
+  width: 420px;
+  height: 360px;
+  text-align: center;
+  box-shadow: rgba(100, 100, 111, 0.7) 0px 7px 29px 0px;
+}
+.view {
+  padding: 10px;
+  color: white;
+  background-color: #1971c2;
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+#swiss,
+#india,
+#sweden,
+#carebian,
+#indonesia,
+#france {
+  padding: 10px;
+  color: white;
+  background-color: #1971c2;
+  margin: 5px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+.view:hover {
+  background-color: #339af0;
+}
+.foot {
+  background-color: #f1f3f5;
+  background-color: #d0ebff;
+}
+.tac {
+  display: flex;
+  justify-content: end;
+  padding: 15px;
+  gap: 20px;
+}
+.copy {
+  margin-right: auto;
+}
+.tac:last-child {
+  margin-right: 10px;
+}
+
+footer a {
+  color: #212529;
+  text-decoration: none;
+  cursor: pointer;
+}
+.special-heading {
+  text-align: center;
+}
+article {
+  background-color: #a5d8ff;
+}
+.destination-3 {
+  margin: 20px 15px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.offer {
+  background-color: #d7e8fb;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: rgba(100, 100, 111, 0.7) 0px 7px 29px 0px;
+}
+.offer .view {
+  background-color: #ffd43b;
+  color: #333;
+}
+.offer .view:hover {
+  background-color: #fcc419;
+}
+.offer h5::after {
+  content: "30% off";
+  color: white;
+  background-color: red;
+  font-size: 16px;
+  margin-left: 10px;
+  padding: 3px;
+  border-radius: 5px;
+}
+.information {
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+}
+.address,
+.phone,
+.mail,
+.social-media {
+  text-align: center;
+  margin: 20px;
+  background-color: #d7e8fb;
+  border-radius: 10px;
+  width: 250px;
+  height: 110px;
+  text-align: center;
+  box-shadow: rgba(100, 100, 111, 0.7) 0px 7px 29px 0px;
+  margin-bottom: 50px;
+}
